@@ -12,8 +12,7 @@
         transform: skewX(-330deg)
         @include respond (tab-port)
             transform: skewX(-350deg)
-            text-align: center
-            
+            text-align: center      
     &__img
         width: 15rem
         height: 15rem
@@ -25,10 +24,12 @@
         margin-right: 4rem
         overflow: hidden
         position: relative
+        @include respond (tab-land)
+            margin-top: -3rem
         @include respond (tab-port)
             float: none
             margin: 0 auto
-            margin-bottom: 2rem
+            margin-bottom: 3rem
         img
             height: 100%
             transform: scale(1.2)
